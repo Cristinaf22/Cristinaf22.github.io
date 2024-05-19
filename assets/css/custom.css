@@ -1,0 +1,9 @@
+.text-white {
+    color: aliceblue;
+}
+
+
+.center-align {
+  align-items: center;
+  justify-content: center;
+}
