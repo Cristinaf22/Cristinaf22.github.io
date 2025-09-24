@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --mainfont: "Poppins", sans-serif;
+    --colorletter: #12110F;
+    --colorYellow: #FFCC26;
+    --colorWhite: #ffffff;
+    --itemhover: #e2e2e2;
+}
+
+body{
+    font-family: var(--mainfont);
+    color: var(--colorletter);
+}
+
+main{
+    flex-direction: column;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-align-center{
+    display: flex;
+    align-items: center;
+}
+
+.font-weight{
+    font-weight: 500;
+}
+
+h1 {
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+div h1{
+    width: 100%;
+    height: auto;
+    font-size: 2.6vw;
+    text-decoration: 3.5px underline var(--colorYellow);
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+
+div h3{
+    width: 100%;
+    height: auto;
+    font-size: 1.25vw;
+    margin-bottom: 80px;
+    text-align:left;
+}
+
+h2,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    transition: all 100ms ease-out;
+}
+
+h6{
+    height: 30px;
+    color: #C4C4C4;
+    font-size: 1.3vw;
+    letter-spacing: 0.3px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--colorletter);
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+}
+
+#footer1{
+    width: 70%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+#container1 .h3-footer{
+    font-weight: 400;
+    color: #636363;
+    font-size: 0.8vw;
+}
+
+#container1{
+    flex: 1.1;
+    flex-direction: column;
+}
+
+#container1 img{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+#container1 h3{
+    font-size: 0.9vw;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+#container2{
+    flex: 1;
+}
+
+#container2 img{
+    object-fit: cover;
+}
+
+#container3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-container3{
+    width: 100%;
+    height: auto;
+}
+
+.div-container3 p:hover{
+    text-decoration: underline;
+}
+
+h4{
+    width: 100%;
+    height: auto;
+    font-size: 1.5vw;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+#social h4{
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.social-network{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.social-network a {
+    margin: 40px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-network i{
+    font-size: 3vw;
+    transition: transform 0.3s ease;
+}
+
+.social-network a:hover {
+    background-color: var(--colorYellow);
+    transform: scale(1.1);
+}
+
+.text-center{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+/*--------------------------------MEDIA MOVIL--------------------------------*/
+
+
+@media (max-width: 430px) {
+
+    #footer1{
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .footer-container{
+        height: auto;
+    }
+
+    #container1 .h3-footer{
+        font-size: 3.9vw;
+    }
+
+    #container1{
+        flex: 0;
+    }
+
+    #container1 img{
+        margin-bottom: 10px;
+    }
+
+    #container1 h3{
+        font-size: 4vw;
+        display: flex;
+        align-items: start;
+    }
+
+    #container2{
+        flex: 0;
+    }
+
+    #container2 img{
+        height: 150px;
+        margin-bottom: 20px;
+    }
+
+    #container3{
+        flex: 0;
+        column-gap: 0px;
+    }
+
+    #container3 p{
+        font-size: 3.5vw;
+    }
+
+    h4{
+        font-size: 4vw;
+        margin-bottom: 0px;
+    }
+
+    #social h4{
+        margin-bottom: 0px;
+        font-size: 5vw;
+    }
+
+    .social-network{
+        justify-content: center;
+        height: auto;
+    }
+
+    .social-network a {
+        width: 25%;
+        height: 30px;
+        transition: 0.3s ease, transform 0.3s ease;
+        margin-bottom: 10px;
+    }
+
+    .social-network i{
+        font-size: 7vw;
+    }
+
+}

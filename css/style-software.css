@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --mainfont: "Poppins", sans-serif;
+    --colorletter: #12110F;
+    --colorYellow: #FFCC26;
+    --colorBlue: #1967d2;
+    --colorWhite: #ffffff;
+    --itemhover: #e2e2e2;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px); /* empieza un poco abajo */
+  transition: all 0.8s ease-out;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+body{
+    font-family: var(--mainfont);
+    color: var(--colorletter);
+}
+
+main{
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-align-center{
+    display: flex;
+    align-items: center;
+}
+
+.font-weight{
+    font-weight: 500;
+}
+
+h1 {
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+div h1{
+    width: 100%;
+    height: auto;
+    font-size: 2.6vw;
+    text-decoration: 3.5px underline var(--colorYellow);
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+
+div h3{
+    width: 100%;
+    height: auto;
+    font-size: 1.25vw;
+    margin-bottom: 80px;
+    text-align:left;
+}
+
+h2,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    transition: all 100ms ease-out;
+}
+
+h6{
+    height: 30px;
+    color: #C4C4C4;
+    font-size: 1.3vw;
+    letter-spacing: 0.3px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--colorletter);
+}
+
+#title-projects{
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+    margin-bottom: 80px;
+    flex-direction: column;
+    background-image: url("../media/coding2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+}
+
+#title-projects h1{
+    border: 5px solid var(--colorYellow);
+    width: 20%;
+    height: 100px;
+    font-size: 2.5vw;
+    margin-top: 30px;
+    color: var(--colorletter);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.815);
+}
+
+.btn-project{
+    width: 90%;
+    height: auto;
+}
+
+.btn-black{
+    border: none;
+    width: 10%;
+    height: auto;
+    font-size: 1.5vw;
+    border-radius: 5px;
+    background-color: #12110F;
+    color: var(--colorWhite);
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    margin-top: 40px;
+    padding: 12px;
+}
+
+.fa-arrow-left{
+    margin-right: 10px;
+}
+
+.btn-black:hover {
+    border: 2px solid var(--colorletter);
+    color: var(--colorletter);
+    background-color: var(--colorWhite);
+}
+
+.project{
+    width: 90%;
+    height: auto;
+    display: flex;
+    margin-bottom: 50px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+#project-multimedia1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+#project-multimedia2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#project-multimedia2 img {
+    max-width: 50%;
+    height: auto;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+#project-multimedia2 img:hover{
+    transform: scale(1.1);
+}
+
+#project-multimedia3 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+}
+
+#project-multimedia3 img {
+    width: 90%;
+    height: auto;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+#project-multimedia3 img:hover{
+    transform: scale(1.1);
+}
+
+#img-app{
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+#img-app:hover{
+    transform: scale(1.1);
+    margin-right: 30px;
+}
+
+.title{
+    text-align: center;
+}
+
+.description{
+    width: 90%;
+    height: auto;
+    font-size: 1.3vw;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+iframe{
+    padding: 20px;
+}
+
+.border-color1{
+    border: 5px solid var(--colorYellow);
+}
+
+.border-color2{
+    border: 5px solid var(--colorletter);
+}
+
+#project-videos{
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.margin-bottom2{
+    margin-bottom: 120px;
+}
+
+video{
+    width: 100%;
+    height: auto;
+    /* max-width: 700px; */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.column{
+    column-gap: 50px;
+}
+
+
+/*--------------------------------MEDIA MOVIL--------------------------------*/
+
+
+@media (max-width: 430px) {
+
+    #title-projects{
+        height: auto;
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+    
+    #title-projects h1{
+        border: 4px solid var(--colorYellow);
+        width: 55%;
+        height: auto;
+        font-size: 6vw;
+    }
+    
+    .btn-black{
+        width: 32%;
+        height: auto;
+        font-size: 4vw;
+    }
+    
+    .project{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .description{
+        font-size: 3.2vw;
+        margin-bottom: 30px;
+    }
+
+    .title{
+        font-size: 6vw;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    #project-multimedia3 img {
+        height: 200px;
+    }
+
+    #project-multimedia2 img {
+        height: 300px;
+    }
+
+    iframe{
+        width: 360px
+    }
+    
+    #project-videos{
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+    .margin-bottom3{
+        margin-bottom: 50px;
+    }
+
+    .margin-bottom{
+        margin-bottom: 50px;
+    }
+    
+    .btn-project{
+        width: 100%;
+    }
+
+
+}
